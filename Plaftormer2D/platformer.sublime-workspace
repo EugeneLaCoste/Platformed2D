@@ -1,0 +1,464 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"GameObject",
+				"GameObject"
+			],
+			[
+				"sat",
+				"startMarker"
+			],
+			[
+				"dist",
+				"distLength"
+			],
+			[
+				"walk",
+				"walkPointSet"
+			],
+			[
+				"random",
+				"randomZ"
+			],
+			[
+				"player",
+				"playerInSightRange"
+			],
+			[
+				"playeri",
+				"playerInAttackRange"
+			],
+			[
+				"play",
+				"playerInAttackRange"
+			],
+			[
+				"Aud",
+				"AudioSource"
+			],
+			[
+				"Spe",
+				"SPEED_CHANGED"
+			],
+			[
+				"settings",
+				"settingsPopup"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"pix",
+				"pixelHeight"
+			],
+			[
+				"fi",
+				"fixedDeltaTime"
+			],
+			[
+				"sen",
+				"sensitivityVert"
+			],
+			[
+				"sensi",
+				"sensitivityHor"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"block",
+				"block\tdisplay"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/scripts/GuardScript.cs",
+			"settings":
+			{
+				"buffer_size": 2348,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"syntaxFlod",
+				"SyntaxFold: Fold All"
+			],
+			[
+				"Omnisharp reload",
+				"OmniSharpSublime: Reload Solution"
+			],
+			[
+				"removePackage",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insatl",
+				"Package Control: Install Package"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 753.0,
+		"history":
+		[
+			"find",
+			"auto",
+			">>>help",
+			"/help",
+			"help",
+			"menu",
+			"show_menu"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Secret/Practic/Plaftormer2D/Assets/scripts"
+	],
+	"file_history":
+	[
+		"/D/Secret/Practic/Plaftormer2D/Assets/scripts/GuardScript.cs",
+		"/D/Secret/Practic/Plaftormer2D/platformer.sublime-project",
+		"/D/Secret/Учёба/JS/My/index.html",
+		"/D/Secret/Учёба/JS/My/main.css",
+		"/D/Secret/Учёба/JS/My/main.js",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/PlayerCharacter.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/UIContr.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/Paintball.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/AIPatrol.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/SceneController.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/MyPractic.sublime-project",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/MenuControls.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/ReactiveTarget.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/BulletShot.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/Waypoint.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/CrosshairCam.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/WanderingAI.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/PlayerManager.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/Messenger.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/EnemyAI.cs",
+		"/C/Users/Admin/AppData/Roaming/Sublime Text 3/Packages/SyntaxFold/syntax_fold.sublime-settings",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/0",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/EnemyRayShoot.cs",
+		"/D/Secret/AIPatrol.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/GameEvent.cs",
+		"/C/Users/Admin/Desktop/Fireball.cs",
+		"/D/Secret/GitReposit/Practics/MyPracticGame/Assets/Scripts/ReactivePlayer.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/FPSInput.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/Fireball.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/WanderingAI.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/MenuControls.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/UIContr.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/SceneController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/ReactiveTarget.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/BulletShot.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/WayPoint.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/AIPatrol.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/TryToRayShoot.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/EnemyAI.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/CrosshairCam.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/PlayerManager.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/AITryTwo.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/PlayerCharacter.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/Fireball.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/SceneController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/WanderingAI.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/SettingsMenu.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/SettingsPopup.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/EscapeMenu.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/EscapeSettings.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/Puse.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/ReactiveTarget.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/MouseLook.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/GameEvent.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/UIController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/RayShooter.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/Messenger.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/RayShooter.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/MyPracticGame/Assets/Scripts/BasicUI.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/MouseLook.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/FPSInput.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Elenesski Generic Move Camera/GenericMoveCamera.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/PlayerController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/ForCam.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/Camming.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/TRY 2/Assets/Scripts/CarController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Elenesski Generic Move Camera/Elenesski's Generic Move Camera.pdf.meta",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/CameraControlInver.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/NewCam.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/CameraController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/PlayerCamera.cs",
+		"/D/Secret/ПО/UnityProjects/SCRIPTS/CameraController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/Maybe.cs",
+		"/D/Secret/РџРћ/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/CameraController.cs",
+		"/D/Secret/РџРћ/UnityProjects/Practic/RuningOnBuild/Assets/Scripts/PlayerController.cs",
+		"/D/Secret/ПО/UnityProjects/Practic/Practic2/Assets/Scripts/CarController.cs",
+		"/D/Games/New Unity Project/Assets/Scripts/Buttons.cs",
+		"/D/Games/New Unity Project/Assets/Scripts/ScrollObjects.cs",
+		"/D/Games/New Unity Project/Assets/Scripts/TextFade.cs",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Admin/learn-the-words/src/index.js",
+		"/C/Users/Admin/learn-the-words/.gitignore",
+		"/C/Users/Admin/learn-the-words/src/App.js",
+		"/D/Secret/вёрстка/layout4/css/main.css",
+		"/D/Secret/вёрстка/index.html",
+		"/D/Secret/вёрстка/css/main.css",
+		"/D/Secret/вёрстка/layout4/index.html",
+		"/C/Users/Admin/AppData/Local/Temp/is-2TB9S.tmp/editor-test.txt",
+		"/D/Secret/вёрстка/layout4/js/main.js",
+		"/D/Secret/вёрстка/layout3/css/main.css",
+		"/D/Secret/вёрстка/layout3/index.html",
+		"/D/Secret/вёрстка/layout/index.html",
+		"/D/Secret/вёрстка/layout/css/main.css",
+		"/D/Secret/вёрстка/layout2/css/main.css",
+		"/D/Secret/вёрстка/layout2/index.html",
+		"/C/Users/Admin/Desktop/mlauncher_release_1_34.exe",
+		"/C/Users/Admin/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/D/Secret/html-css-layout-files/Верстка/css/main.css",
+		"/D/Secret/html-css-layout-files/Верстка/index.html",
+		"/C/Users/Admin/BOTs/config.py",
+		"/C/Users/Admin/BOTs/bot.py",
+		"/C/Users/Admin/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/C/Users/Admin/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/D/Secret/BOTs/config.py"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/scripts/GuardScript.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1798,
+								1798
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 960.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "platformer.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 175.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
