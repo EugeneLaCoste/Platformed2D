@@ -18,7 +18,7 @@ public class Patrol : MonoBehaviour {
 	private Animator animator;
 	public Transform attackPos;
     public LayerMask whatIsPlayer;
-	public Transform target;
+	public GameObject target;
 	public Transform healthBar;
 	
 	void Start () {
@@ -28,11 +28,12 @@ public class Patrol : MonoBehaviour {
 		healthBar.transform.localScale = new Vector3(-1, 1, 0);
 		animator.SetInteger("AnimState", 2);
 		animator.SetBool("Grounded", true);
+		target = GameObject.FindGameObjectWithTag("Player");
 	}
 
 	void Update () {
 		if (death == false) {
-			if (Mathf.Abs(transform.position.x - target.position.x) > 2) {
+			if (Mathf.Abs(transform.position.x - target.transform.position.x) > 2) {
 				animator.SetInteger("AnimState", 2);
 				body2d.velocity = new Vector2(speed * direction, body2d.velocity.y);
 				RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance, LayerMask.GetMask("Ground"));
@@ -48,8 +49,8 @@ public class Patrol : MonoBehaviour {
 					}
 				}
 			}
-			if (Mathf.Abs(transform.position.x - target.position.x) < 2) {
-				if(transform.position.x - target.position.x > 0) {
+			if (Mathf.Abs(transform.position.x - target.transform.position.x) < 2) {
+				if(transform.position.x - target.transform.position.x > 0) {
 					transform.localScale = new Vector3(enemyScale, enemyScale, 0);
 					healthBar.transform.localScale = new Vector3(1, 1, 0);
 					direction = -1;
@@ -86,7 +87,7 @@ public class Patrol : MonoBehaviour {
         for (int i = 0; i < playerToDamage.Length; i++) {
            	playerToDamage[i].GetComponent<Player>().TakeDamage(damage);
         }
-        Debug.Log("OnAttack Enemy");
+
 	}
 
 	void OnDrawGizmosSelected() {

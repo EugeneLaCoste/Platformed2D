@@ -31,8 +31,7 @@ public class Player : MonoBehaviour {
 
 	void Update () {
         if (death == false) {
-
-        
+       
             inputX = Input.GetAxis("Horizontal");
 
             if (inputX > 0){
@@ -42,7 +41,6 @@ public class Player : MonoBehaviour {
                 transform.localScale = new Vector3(playerScale, playerScale, playerScale);
             }
                 
-
             body2d.velocity = new Vector2(inputX * speed, body2d.velocity.y);
 
             isGrounded = IsGrounded();
@@ -103,7 +101,6 @@ public class Player : MonoBehaviour {
         for (int i = 0; i < enemiesToDamage.Length; i++) {
             enemiesToDamage[i].GetComponent<Patrol>().TakeDamage(damage);
         }
-        Debug.Log("OnAttack");
     }
 
     bool IsGrounded()
@@ -127,13 +124,11 @@ public class Player : MonoBehaviour {
 			death = true;
         }
         healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
-        Debug.Log(currentHealth);
     }
 
     public void Heal (int heal) {
         currentHealth += heal; 
         healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
-        Debug.Log(currentHealth);
     }
 
 }
