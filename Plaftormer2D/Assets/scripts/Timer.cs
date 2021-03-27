@@ -14,14 +14,16 @@ public class Timer : MonoBehaviour {
 	}
 	
 	IEnumerator reloadTimer(float reloadTimeInSeconds) {
-		counter = 62;
+		counter = 92;
 		
 		while (counter > reloadTimeInSeconds) {
 			counter -= Time.deltaTime;
 			if (counter < 10) {
 				timerText.text = counter.ToString().Substring(0,1);
-			} else {
+			} else if (counter < 100){
 				timerText.text = counter.ToString().Substring(0,2);
+			} else {
+				timerText.text = counter.ToString().Substring(0,3);
 			}
 			if (counter < 1) {
 				gameOver.SetActive(true);

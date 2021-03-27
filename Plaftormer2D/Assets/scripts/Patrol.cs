@@ -70,7 +70,7 @@ public class Patrol : MonoBehaviour {
 		animator.SetTrigger("Hurt");
 		animator.SetInteger("AnimState", 0);
 		health -= damage;
-		if (health == 0) {
+		if (health <= 0) {
 			death = true;
 			animator.SetTrigger("Death");
 			Destroy(gameObject, 0.5f);

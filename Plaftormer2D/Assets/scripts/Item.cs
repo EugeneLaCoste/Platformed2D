@@ -20,7 +20,7 @@ public class Item : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D obj) {
 		if (obj.transform.tag == "Player") 
 		{
-			Destroy(gameObject);
+			gameObject.SetActive(false);
 			player.GetComponent<Player>().Heal(value);
 		}
 	}

@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
 
     public Transform attackPos;
     public LayerMask whatIsEnemies;
-    public Transform waterDetection;
+    public Transform Detection;
     public Transform healthBar;
     public float attackRange;
     public int damage;
@@ -87,11 +87,11 @@ public class Player : MonoBehaviour {
                 animator.SetInteger("AnimState", 0);
             }
 
-            RaycastHit2D waterInfo = Physics2D.Raycast(waterDetection.position, Vector2.down, 1f, LayerMask.GetMask("Water"));
-            if (waterInfo.collider == true) {
-                death=true;
-                animator.SetTrigger("Death");
-            }
+            // RaycastHit2D Info = Physics2D.Raycast(Detection.position, Vector2.down, 1f, LayerMask.GetMask("Water"));
+            // if (Info.collider == true) {
+            //     death=true;
+            //     animator.SetTrigger("Death");
+            // }
         }
 
     }
@@ -127,8 +127,21 @@ public class Player : MonoBehaviour {
     }
 
     public void Heal (int heal) {
-        currentHealth += heal; 
+        if (currentHealth + heal > maxHealth) {
+            currentHealth = maxHealth;
+        } else {
+            currentHealth += heal; 
+        }
+        
         healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
+    }
+
+    void OnCollisionEnter2D(Collision2D obj) {
+        if(obj.transform.tag == "Water") {
+            TakeDamage(currentHealth);
+        } else if(obj.transform.tag == "Spike") {
+            TakeDamage(1);
+        }
     }
 
 }
