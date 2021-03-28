@@ -20,6 +20,7 @@ public class Patrol : MonoBehaviour {
     public LayerMask whatIsPlayer;
 	public GameObject target;
 	public Transform healthBar;
+	public ParticleSystem blood;
 	
 	void Start () {
 		body2d = GetComponent<Rigidbody2D>();
@@ -67,6 +68,7 @@ public class Patrol : MonoBehaviour {
 
 	public void TakeDamage(int damage) 
 	{
+		blood.Play();	
 		animator.SetTrigger("Hurt");
 		animator.SetInteger("AnimState", 0);
 		health -= damage;

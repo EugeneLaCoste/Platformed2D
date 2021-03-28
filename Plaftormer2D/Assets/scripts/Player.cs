@@ -17,6 +17,8 @@ public class Player : MonoBehaviour {
     public LayerMask whatIsEnemies;
     public Transform Detection;
     public Transform healthBar;
+    public GameObject rock;
+    private Rigidbody2D rockrg2d;
     public float attackRange;
     public int damage;
     public int maxHealth = 10;
@@ -26,7 +28,8 @@ public class Player : MonoBehaviour {
     void Start () {
         animator = GetComponent<Animator>();
         body2d = GetComponent<Rigidbody2D>();
-        currentHealth = maxHealth;
+        currentHealth = maxHealth;  
+        rockrg2d = rock.GetComponent<Rigidbody2D>();
 	}
 
 	void Update () {
@@ -87,11 +90,6 @@ public class Player : MonoBehaviour {
                 animator.SetInteger("AnimState", 0);
             }
 
-            // RaycastHit2D Info = Physics2D.Raycast(Detection.position, Vector2.down, 1f, LayerMask.GetMask("Water"));
-            // if (Info.collider == true) {
-            //     death=true;
-            //     animator.SetTrigger("Death");
-            // }
         }
 
     }
@@ -116,7 +114,7 @@ public class Player : MonoBehaviour {
     public void TakeDamage(int damage) {
 
         if (currentHealth > 0) {
-            animator.SetTrigger("Hurt");
+            // animator.SetTrigger("Hurt");
 		    currentHealth -= damage; 
         }
         if (currentHealth <= 0) {
@@ -140,6 +138,10 @@ public class Player : MonoBehaviour {
         if(obj.transform.tag == "Water") {
             TakeDamage(currentHealth);
         } else if(obj.transform.tag == "Spike") {
+            TakeDamage(1);
+        } else if(obj.transform.tag == "Axe") {
+            TakeDamage(1);
+        } else if (Mathf.Abs(rockrg2d.velocity.y) > 10 && obj.transform.tag == "Rock" ) {
             TakeDamage(1);
         }
     }

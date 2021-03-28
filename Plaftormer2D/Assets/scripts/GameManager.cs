@@ -13,17 +13,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject enemyPrefab;
 	public GameObject timer;
 
-	private GameObject enemy;
-	private GameObject apple;
-	private GameObject beer;
-	private GameObject brownie;
-	private int waveCount = 1;
-
 	void Start () {
 		wave = wavePassed.GetComponent<Animator>();
-		apple = GameObject.FindGameObjectWithTag("Apple");
-		beer = GameObject.FindGameObjectWithTag("Beer");
-		brownie = GameObject.FindGameObjectWithTag("Brownie");
+
 	}
 	
 	void Update () {
@@ -41,7 +33,8 @@ public class GameManager : MonoBehaviour {
 			// beer.SetActive(true);
 			// brownie.SetActive(true);
 			wavePassed.SetActive(true);
-			// SceneManager.LoadScene("main FIXED");
+			StartCoroutine(loader());
+			
 			// for (int i = 0; i<5; i++) {
 			// 	enemy = Instantiate(enemyPrefab) as GameObject;
 			// 	enemy.transform.position = new Vector3(Random.Range(-15, 21), -2,0);
@@ -52,6 +45,11 @@ public class GameManager : MonoBehaviour {
 			// }
 			// timer.GetComponent<Timer>().counter += 90;
 		}
+	}
+
+	IEnumerator loader() {
+		yield return new WaitForSeconds(3f);
+		SceneManager.LoadScene("LevelOne");
 	}
 
 	public void Restart() {
