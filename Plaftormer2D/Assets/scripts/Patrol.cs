@@ -63,7 +63,10 @@ public class Patrol : MonoBehaviour {
 				animator.SetTrigger("Attack");
 
 			}
-		}		
+		}	
+		if (transform.position.y < -20) {
+			TakeDamage(100);
+		}
 	}
 
 	public void TakeDamage(int damage) 
@@ -96,4 +99,11 @@ public class Patrol : MonoBehaviour {
 		Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);    
     }
+
+	void OnCollisionEnter2D(Collision2D obj) {
+        if(obj.transform.tag == "Water") {
+            TakeDamage(100);
+        }
+    }
+
 }

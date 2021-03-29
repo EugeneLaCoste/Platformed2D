@@ -18,7 +18,6 @@ public class Player : MonoBehaviour {
     public Transform Detection;
     public Transform healthBar;
     public GameObject rock;
-    private Rigidbody2D rockrg2d;
     public float attackRange;
     public int damage;
     public int maxHealth = 10;
@@ -29,69 +28,66 @@ public class Player : MonoBehaviour {
         animator = GetComponent<Animator>();
         body2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;  
-        rockrg2d = rock.GetComponent<Rigidbody2D>();
+        // rockrg2d = rock.GetComponent<Rigidbody2D>();
 	}
 
 	void Update () {
-        if (death == false) {
+            if (death == false) {
        
-            inputX = Input.GetAxis("Horizontal");
+                inputX = Input.GetAxis("Horizontal");
 
-            if (inputX > 0){
-                transform.localScale = new Vector3(-playerScale, playerScale, playerScale);
-            }
-            else if (inputX < 0) {
-                transform.localScale = new Vector3(playerScale, playerScale, playerScale);
-            }
+                if (inputX > 0){
+                    transform.localScale = new Vector3(-playerScale, playerScale, playerScale);
+                }
+                else if (inputX < 0) {
+                    transform.localScale = new Vector3(playerScale, playerScale, playerScale);
+                }
                 
-            body2d.velocity = new Vector2(inputX * speed, body2d.velocity.y);
+                body2d.velocity = new Vector2(inputX * speed, body2d.velocity.y);
 
-            isGrounded = IsGrounded();
-            animator.SetBool("Grounded", isGrounded);
+                isGrounded = IsGrounded();
+                animator.SetBool("Grounded", isGrounded);
 
-            if (Input.GetKeyDown("k")){
-               animator.SetTrigger("Death");
-           }
-            else if (Input.GetKeyDown("h")) {
-                animator.SetTrigger("Hurt");
-            }
+                if (Input.GetKeyDown("k")){
+                animator.SetTrigger("Death");
+                }
+                else if (Input.GetKeyDown("h")) {
+                    animator.SetTrigger("Hurt");
+                }
        
-            else if (Input.GetKeyDown("r")) {
-                animator.SetTrigger("Recover");
-            }
+                else if (Input.GetKeyDown("r")) {
+                    animator.SetTrigger("Recover");
+                }
 
-            else if (Input.GetKeyDown("i")) {
-                combatIdle = !combatIdle;
-            }
+                else if (Input.GetKeyDown("i")) {
+                    combatIdle = !combatIdle;
+                }
 
-            else if (Input.GetKeyDown("space"))
-            {
-              animator.SetTrigger("Attack");
-            }
+                else if (Input.GetKeyDown("space")) {
+                    animator.SetTrigger("Attack");
+                }
 
-            else if (Input.GetKeyDown(KeyCode.W) && isGrounded)
-            {
-                animator.SetTrigger("Jump");
-                body2d.velocity = new Vector2(body2d.velocity.x, jumpForce);
-            }
+                else if (Input.GetKeyDown(KeyCode.W) && isGrounded) {
+                    animator.SetTrigger("Jump");
+                    body2d.velocity = new Vector2(body2d.velocity.x, jumpForce);
+                }
 
-        //Walk
-            else if (Mathf.Abs(inputX) > Mathf.Epsilon && isGrounded) {
-                animator.SetInteger("AnimState", 2);
-            }
+                //Walk
+                else if (Mathf.Abs(inputX) > Mathf.Epsilon && isGrounded) {
+                    animator.SetInteger("AnimState", 2);
+                }
             
-        //Combat idle
-            else if (combatIdle) {
-                animator.SetInteger("AnimState", 1);
-            }
+                //Combat idle
+                else if (combatIdle) {
+                    animator.SetInteger("AnimState", 1);
+                }
             
-        //Idle
-            else {
-                animator.SetInteger("AnimState", 0);
-            }
+                //Idle
+                else {
+                    animator.SetInteger("AnimState", 0);
+                }
 
-        }
-
+            }        
     }
     
     public void OnAttack () {
@@ -141,9 +137,9 @@ public class Player : MonoBehaviour {
             TakeDamage(1);
         } else if(obj.transform.tag == "Axe") {
             TakeDamage(1);
-        } else if (Mathf.Abs(rockrg2d.velocity.y) > 10 && obj.transform.tag == "Rock" ) {
-            TakeDamage(1);
-        }
+        }// else if (Mathf.Abs(rockrg2d.velocity.y) > 10 && obj.transform.tag == "Rock" ) {
+        //     TakeDamage(1);
+        // }
     }
 
 }

@@ -12,10 +12,13 @@ public class GameManager : MonoBehaviour {
 	public GameObject[] enemies;
 	public GameObject enemyPrefab;
 	public GameObject timer;
+	public GameObject pauseMenu;
+	public bool levelOne = false;
+	public bool levelTwo = false;
+	private bool pause = false;
 
 	void Start () {
 		wave = wavePassed.GetComponent<Animator>();
-
 	}
 	
 	void Update () {
@@ -25,34 +28,55 @@ public class GameManager : MonoBehaviour {
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
 		if (enemies.Length == 0) {
-			// waveCount += 1;
-			// apple.transform.position = new Vector2(Random.Range(-17, 75), Random.Range(-2, 2));
-			// beer.transform.position = new Vector2(Random.Range(-17, 75), Random.Range(-2, 2));
-			// brownie.transform.position = new Vector2(Random.Range(-17, 75), Random.Range(-2, 2));
-			// apple.SetActive(true);
-			// beer.SetActive(true);
-			// brownie.SetActive(true);
 			wavePassed.SetActive(true);
-			StartCoroutine(loader());
+			if(SceneManager.GetActiveScene().buildIndex == 1) {
+				levelOne = true;
+			} else if (SceneManager.GetActiveScene().buildIndex == 2) {
+				levelOne = true;
+				levelTwo = true;
+			}
 			
-			// for (int i = 0; i<5; i++) {
-			// 	enemy = Instantiate(enemyPrefab) as GameObject;
-			// 	enemy.transform.position = new Vector3(Random.Range(-15, 21), -2,0);
-			// }
-			// for (int j = 0; j < 2; j++) {
-			// 	enemy = Instantiate(enemyPrefab) as GameObject;
-			// 	enemy.transform.position = new Vector3(Random.Range(53, 93), -2,0);
-			// }
-			// timer.GetComponent<Timer>().counter += 90;
+			StartCoroutine(loader());
+		}
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+			if (pause == false) {
+				OnPause();
+			} else {
+				OnResume();
+			}
 		}
 	}
-
 	IEnumerator loader() {
 		yield return new WaitForSeconds(3f);
-		SceneManager.LoadScene("LevelOne");
+		GetComponent<SaverBase>().Save();
+		if (SceneManager.GetActiveScene().buildIndex != 2) {
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+		} else { 
+			SceneManager.LoadScene("StartMenu");
+		}
+		
 	}
 
 	public void Restart() {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		OnResume();
+	}
+
+	public void OnResume() {
+		Time.timeScale = 1;
+		pause = false;
+		pauseMenu.SetActive(false);
+	}
+
+	public void OnPause() {
+    	Time.timeScale = 0;
+		pause = true;
+    	pauseMenu.SetActive(true);
+	}
+
+	public void OnMenu() {
+		SceneManager.LoadScene("StartMenu");
+		OnResume();
 	}
 }
