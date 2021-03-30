@@ -26,6 +26,11 @@ public class MenuController : MonoBehaviour {
 			levelTwo.GetComponent<Button>().enabled = true;
 			lockTwo.SetActive(false);	
 		}
+
+		if (levelSecond == true) {
+			levelThree.GetComponent<Button>().enabled = true;
+			lockThree.SetActive(false);
+		}
 	}
 	
 	// Update is called once per frame

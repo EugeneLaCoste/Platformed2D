@@ -63,7 +63,7 @@ public class Player : MonoBehaviour {
                     combatIdle = !combatIdle;
                 }
 
-                else if (Input.GetKeyDown("space")) {
+                else if (Input.GetKey("space")) {
                     animator.SetTrigger("Attack");
                 }
 
@@ -110,7 +110,7 @@ public class Player : MonoBehaviour {
     public void TakeDamage(int damage) {
 
         if (currentHealth > 0) {
-            // animator.SetTrigger("Hurt");
+            animator.SetTrigger("Hurt");
 		    currentHealth -= damage; 
         }
         if (currentHealth <= 0) {

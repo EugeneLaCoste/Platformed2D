@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour {
 	IEnumerator loader() {
 		yield return new WaitForSeconds(3f);
 		GetComponent<SaverBase>().Save();
-		if (SceneManager.GetActiveScene().buildIndex != 2) {
+		if (SceneManager.GetActiveScene().buildIndex != 3) {
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 		} else { 
 			SceneManager.LoadScene("StartMenu");
