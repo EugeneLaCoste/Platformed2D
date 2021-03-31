@@ -21,7 +21,7 @@ public class MainCamera : MonoBehaviour {
 		this.transform.position = new Vector3() 
 		{
 			x = this.playerTransform.position.x,
-			y = this.playerTransform.position.y,
+			y = this.playerTransform.position.y + 1.5f,
 			z = this.playerTransform.position.z - 10
 		};
 
@@ -38,7 +38,7 @@ public class MainCamera : MonoBehaviour {
 			Vector3 target = new Vector3() 
 			{
 				x = this.playerTransform.position.x,
-				y = this.playerTransform.position.y,
+				y = this.playerTransform.position.y + 1.5f,
 				z = this.playerTransform.position.z - 10
 			};
 		
